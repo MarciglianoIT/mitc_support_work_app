@@ -8,9 +8,8 @@ import 'create_account_view.form.dart';
 import 'create_account_viewmodel.dart';
 
 @FormView(fields: [
-  FormTextField(name: 'fullName'),
   FormTextField(name: 'email'),
-  FormTextField(name: 'password'),
+  FormTextField(name: 'password', isPassword: true),
 ])
 class CreateAccountView extends StatelessWidget with $CreateAccountView {
   CreateAccountView({Key? key}) : super(key: key);
@@ -31,10 +30,6 @@ class CreateAccountView extends StatelessWidget with $CreateAccountView {
             mainButtonTitle: 'SIGN UP',
             form: Column(
               children: [
-                TextField(
-                  decoration: const InputDecoration(labelText: 'Full Name'),
-                  controller: fullNameController,
-                ),
                 TextField(
                   decoration: const InputDecoration(labelText: 'Email'),
                   controller: emailController,

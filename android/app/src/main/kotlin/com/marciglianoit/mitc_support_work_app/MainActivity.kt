@@ -1,4 +1,4 @@
-package com.example.mitc_support_work_app
+package com.marciglianoit.mitc_support_work_app
 
 import io.flutter.embedding.android.FlutterActivity
 

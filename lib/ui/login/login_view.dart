@@ -9,7 +9,7 @@ import 'login_viewmodel.dart';
 
 @FormView(fields: [
   FormTextField(name: 'email'),
-  FormTextField(name: 'password'),
+  FormTextField(name: 'password', isPassword: true),
 ])
 class LoginView extends StatelessWidget with $LoginView {
   LoginView({Key? key}) : super(key: key);
