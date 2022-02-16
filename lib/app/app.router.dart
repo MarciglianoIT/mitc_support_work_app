@@ -92,8 +92,11 @@ class StackedRouter extends RouterBase {
       );
     },
     ProfileView: (data) {
+      var args = data.getArgs<ProfileViewArguments>(
+        orElse: () => ProfileViewArguments(),
+      );
       return MaterialPageRoute<dynamic>(
-        builder: (context) => const ProfileView(),
+        builder: (context) => ProfileView(key: args.key),
         settings: data,
       );
     },
@@ -152,6 +155,12 @@ class CreateAccountViewArguments {
 class LoginViewArguments {
   final Key? key;
   LoginViewArguments({this.key});
+}
+
+/// ProfileView arguments holder class
+class ProfileViewArguments {
+  final Key? key;
+  ProfileViewArguments({this.key});
 }
 
 /// TicketDataView arguments holder class

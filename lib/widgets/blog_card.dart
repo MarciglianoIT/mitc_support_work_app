@@ -16,7 +16,6 @@ class BlogCard extends StatelessWidget {
           debugPrint('Card tapped.');
         },
         child: Column(
-          mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             ListTile(
                 leading: const Icon(Icons.album),

@@ -70,7 +70,7 @@ class HomeView extends StatelessWidget {
       case 1:
         return loggedIn ? const TicketNavigator() : LoginView();
       case 2:
-        return loggedIn ? const ProfileView() : LoginView();
+        return loggedIn ? ProfileView() : LoginView();
       default:
         return const BlogView();
     }

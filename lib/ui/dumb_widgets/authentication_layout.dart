@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mitc_support_work_app/widgets/buttons/gesture_botton.dart';
 
 import '../../shared/app_colors.dart';
 import '../../shared/ui_helpers.dart';
@@ -78,28 +79,10 @@ class AuthenticationLayout extends StatelessWidget {
               color: Colors.red,
             ),
           if (validationMessage != null) verticalSpaceRegular,
-          GestureDetector(
+          GestureButton(
+            isBusy: busy,
+            text: mainButtonTitle!,
             onTap: onMainButtonTapped,
-            child: Container(
-              width: double.infinity,
-              height: 50,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: kcPrimaryColor,
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: busy
-                  ? const CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation(Colors.white),
-                    )
-                  : Text(
-                      mainButtonTitle!,
-                      style: const TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 14),
-                    ),
-            ),
           ),
           verticalSpaceRegular,
           if (onCreateAccountTapped != null)

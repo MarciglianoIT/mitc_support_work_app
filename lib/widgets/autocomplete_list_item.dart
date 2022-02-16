@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../shared/app_colors.dart';
 import 'box_text.dart';
 

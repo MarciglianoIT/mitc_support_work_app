@@ -9,10 +9,10 @@ class FirestoreApi {
   final log = getLogger('FirestoreApi');
 
   final CollectionReference<Map<String, dynamic>> usersCollection =
-      FirebaseFirestore.instance.collection(UsersFirestoreKey);
+      FirebaseFirestore.instance.collection(usersFirestoreKey);
 
   final CollectionReference<Map<String, dynamic>> regionsCollection =
-      FirebaseFirestore.instance.collection(RegionsFirestoreKey);
+      FirebaseFirestore.instance.collection(regionsFirestoreKey);
 
   Future<void> createUser({required User user}) async {
     log.i('user:$user');

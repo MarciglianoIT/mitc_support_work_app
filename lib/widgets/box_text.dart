@@ -7,30 +7,31 @@ class BoxText extends StatelessWidget {
   final String text;
   final TextStyle style;
   final TextAlign alignment;
+  const BoxText(Key key, this.text, this.style, this.alignment): super(key: key);
 
-  const BoxText.headingOne(this.text, {TextAlign align = TextAlign.start})
+  const BoxText.headingOne(this.text, {Key? key, TextAlign align = TextAlign.start})
       : style = heading1Style,
-        alignment = align;
-  const BoxText.headingTwo(this.text, {TextAlign align = TextAlign.start})
+        alignment = align, super(key: key);
+  const BoxText.headingTwo(this.text, {Key? key,TextAlign align = TextAlign.start})
       : style = heading2Style,
-        alignment = align;
-  const BoxText.headingThree(this.text, {TextAlign align = TextAlign.start})
+        alignment = align, super(key: key);
+  const BoxText.headingThree(this.text, {Key? key,TextAlign align = TextAlign.start})
       : style = heading3Style,
-        alignment = align;
-  const BoxText.headline(this.text, {TextAlign align = TextAlign.start})
+        alignment = align, super(key: key);
+  const BoxText.headline(this.text, {Key? key,TextAlign align = TextAlign.start})
       : style = headlineStyle,
-        alignment = align;
-  const BoxText.subheading(this.text, {TextAlign align = TextAlign.start})
+        alignment = align, super(key: key);
+  const BoxText.subheading(this.text, {Key? key,TextAlign align = TextAlign.start})
       : style = subheadingStyle,
-        alignment = align;
-  const BoxText.caption(this.text, {TextAlign align = TextAlign.start})
+        alignment = align, super(key: key);
+  const BoxText.caption(this.text, {Key? key,TextAlign align = TextAlign.start})
       : style = captionStyle,
-        alignment = align;
+        alignment = align, super(key: key);
 
   BoxText.body(this.text,
-      {Color color = kcMediumGreyColor, TextAlign align = TextAlign.start})
+      {Key? key, Color color = kcMediumGreyColor, TextAlign align = TextAlign.start})
       : style = bodyStyle.copyWith(color: color),
-        alignment = align;
+        alignment = align, super(key: key);
 
   @override
   Widget build(BuildContext context) {

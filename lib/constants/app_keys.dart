@@ -1,4 +1,4 @@
 /// Firestore Keys
-const String UsersFirestoreKey = 'users';
-const String AddressesFirestoreKey = 'addresses';
-const String RegionsFirestoreKey = 'regions';
+const String usersFirestoreKey = 'users';
+const String addressesFirestoreKey = 'addresses';
+const String regionsFirestoreKey = 'regions';

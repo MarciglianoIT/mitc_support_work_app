@@ -5,3 +5,6 @@ const Color kcPrimaryColor = ColorPalette.primary;
 const Color kcMediumGreyColor = ColorPalette.primaryAccent;
 const Color kcLightGreyColor = Color(0xffe5e5e5);
 const Color kcVeryLightGreyColor = Color(0xfff2f2f2);
+
+const Color kcDanger = Color(0xffB00020);
+const Color kcAction = Colors.red;
